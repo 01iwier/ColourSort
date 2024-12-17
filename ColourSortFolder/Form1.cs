@@ -22,6 +22,10 @@ namespace ColourSortFolder {
                 return;
             }
 
+            loadingLabel.Text = "Processing...";
+            loadingLabel.Visible = true;
+            loadingLabel.Refresh(); // Force the label to update its display
+
             var imageFiles = Directory.GetFiles(selectedFolderPath, "*.*")
                                        .Where(f => f.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
                                                    f.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
@@ -32,7 +36,8 @@ namespace ColourSortFolder {
                 RenameImageFile(file, colorGroup);
             }
 
-            MessageBox.Show("Images have been renamed and sorted by color!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loadingLabel.Visible = false;
+            MessageBox.Show("Images have been sorted.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void folderSelectButton_Click(object sender, EventArgs e) {
@@ -57,7 +62,7 @@ namespace ColourSortFolder {
 
         private int GetMostProminentColorCategory(string imagePath) {
             using (Bitmap bitmap = new Bitmap(imagePath)) {
-                Bitmap resized = new Bitmap(bitmap, new Size(50, 50));  // Resize image to speed up processing
+                Bitmap resized = new Bitmap(bitmap, new Size(300, 300));  // Resize image to speed up processing
                 var colorCounts = CountColorCategories(resized);
                 return GetMostFrequentCategory(colorCounts);
             }
@@ -89,10 +94,10 @@ namespace ColourSortFolder {
             float brightness = color.GetBrightness();
             float saturation = color.GetSaturation();
 
-            if (brightness < 0.2) {
+            if (brightness < 0.01) {
                 return 1;  // Black
-            } else if (saturation < 0.2) {
-                if (brightness > 0.8) {
+            } else if (saturation < 0.1) {
+                if (brightness > 0.2) {
                     return 3;  // White
                 } else {
                     return 2;  // Gray

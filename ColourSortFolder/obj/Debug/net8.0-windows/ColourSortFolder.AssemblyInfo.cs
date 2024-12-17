@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColourSortFolder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a934097df713743ec4fd61953b858054581217a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4b1128d362216a1ae92bd918186b8d16fb18530")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColourSortFolder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColourSortFolder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,11 +27,12 @@
             sortButton = new Button();
             folderPathTextBox = new TextBox();
             folderSelectButton = new Button();
+            loadingLabel = new Label();
             SuspendLayout();
             // 
             // sortButton
             // 
-            sortButton.Location = new Point(365, 67);
+            sortButton.Location = new Point(390, 108);
             sortButton.Name = "sortButton";
             sortButton.Size = new Size(124, 37);
             sortButton.TabIndex = 1;
@@ -41,14 +42,14 @@
             // 
             // folderPathTextBox
             // 
-            folderPathTextBox.Location = new Point(12, 12);
+            folderPathTextBox.Location = new Point(12, 36);
             folderPathTextBox.Name = "folderPathTextBox";
-            folderPathTextBox.Size = new Size(477, 27);
+            folderPathTextBox.Size = new Size(502, 27);
             folderPathTextBox.TabIndex = 2;
             // 
             // folderSelectButton
             // 
-            folderSelectButton.Location = new Point(235, 67);
+            folderSelectButton.Location = new Point(260, 108);
             folderSelectButton.Name = "folderSelectButton";
             folderSelectButton.Size = new Size(124, 37);
             folderSelectButton.TabIndex = 3;
@@ -56,11 +57,22 @@
             folderSelectButton.UseVisualStyleBackColor = true;
             folderSelectButton.Click += folderSelectButton_Click;
             // 
+            // loadingLabel
+            // 
+            loadingLabel.AutoSize = true;
+            loadingLabel.Location = new Point(12, 66);
+            loadingLabel.Name = "loadingLabel";
+            loadingLabel.Size = new Size(88, 20);
+            loadingLabel.TabIndex = 4;
+            loadingLabel.Text = "Loading . . . ";
+            loadingLabel.Visible = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(501, 116);
+            ClientSize = new Size(526, 157);
+            Controls.Add(loadingLabel);
             Controls.Add(folderSelectButton);
             Controls.Add(folderPathTextBox);
             Controls.Add(sortButton);
@@ -78,5 +90,6 @@
         private Button sortButton;
         private TextBox folderPathTextBox;
         private Button folderSelectButton;
+        private Label loadingLabel;
     }
 }
