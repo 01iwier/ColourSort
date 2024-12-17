@@ -1,0 +1,17 @@
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Release\net8.0-windows\ColourSortFolder.exe
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Release\net8.0-windows\ColourSortFolder.deps.json
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Release\net8.0-windows\ColourSortFolder.runtimeconfig.json
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Release\net8.0-windows\ColourSortFolder.dll
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Release\net8.0-windows\ColourSortFolder.pdb
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.MainForm.resources
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.csproj.GenerateResource.cache
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.AssemblyInfoInputs.cache
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.AssemblyInfo.cs
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.csproj.CoreCompileInputs.cache
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.sourcelink.json
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.dll
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\refint\ColourSortFolder.dll
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.pdb
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ColourSortFolder.genruntimeconfig.cache
+E:\Projects\C#\ColourSortFolder\ColourSortFolder\obj\Release\net8.0-windows\ref\ColourSortFolder.dll

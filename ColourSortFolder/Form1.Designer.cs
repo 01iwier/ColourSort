@@ -24,13 +24,46 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            sortButton = new Button();
+            folderPathTextBox = new TextBox();
+            folderSelectButton = new Button();
             SuspendLayout();
+            // 
+            // sortButton
+            // 
+            sortButton.Location = new Point(365, 67);
+            sortButton.Name = "sortButton";
+            sortButton.Size = new Size(124, 37);
+            sortButton.TabIndex = 1;
+            sortButton.Text = "Sort";
+            sortButton.UseVisualStyleBackColor = true;
+            sortButton.Click += sortButton_Click;
+            // 
+            // folderPathTextBox
+            // 
+            folderPathTextBox.Location = new Point(12, 12);
+            folderPathTextBox.Name = "folderPathTextBox";
+            folderPathTextBox.Size = new Size(477, 27);
+            folderPathTextBox.TabIndex = 2;
+            // 
+            // folderSelectButton
+            // 
+            folderSelectButton.Location = new Point(235, 67);
+            folderSelectButton.Name = "folderSelectButton";
+            folderSelectButton.Size = new Size(124, 37);
+            folderSelectButton.TabIndex = 3;
+            folderSelectButton.Text = "Select Folder";
+            folderSelectButton.UseVisualStyleBackColor = true;
+            folderSelectButton.Click += folderSelectButton_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(627, 311);
+            ClientSize = new Size(501, 116);
+            Controls.Add(folderSelectButton);
+            Controls.Add(folderPathTextBox);
+            Controls.Add(sortButton);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
@@ -38,8 +71,12 @@
             Text = "Colour Sort";
             Load += MainForm_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+        private Button sortButton;
+        private TextBox folderPathTextBox;
+        private Button folderSelectButton;
     }
 }

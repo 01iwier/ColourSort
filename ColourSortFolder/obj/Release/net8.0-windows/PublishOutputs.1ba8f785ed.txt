@@ -1,0 +1,5 @@
+E:\Projects\C#\ColourSortFolder.exe
+E:\Projects\C#\ColourSortFolder.dll
+E:\Projects\C#\ColourSortFolder.deps.json
+E:\Projects\C#\ColourSortFolder.runtimeconfig.json
+E:\Projects\C#\ColourSortFolder.pdb

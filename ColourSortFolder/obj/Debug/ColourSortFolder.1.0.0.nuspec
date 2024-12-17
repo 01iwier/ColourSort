@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ColourSortFolder</id>
+    <version>1.0.0</version>
+    <authors>ColourSortFolder</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="7a934097df713743ec4fd61953b858054581217a" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Debug\net8.0-windows\ColourSortFolder.runtimeconfig.json" target="lib\net8.0-windows7.0\ColourSortFolder.runtimeconfig.json" />
+    <file src="E:\Projects\C#\ColourSortFolder\ColourSortFolder\bin\Debug\net8.0-windows\ColourSortFolder.dll" target="lib\net8.0-windows7.0\ColourSortFolder.dll" />
+  </files>
+</package>
