@@ -58,15 +58,13 @@ namespace ColourSortFolder {
         private int GetMostProminentColorCategory(string imagePath) {
             using (Bitmap bitmap = new Bitmap(imagePath)) {
                 Bitmap resized = new Bitmap(bitmap, new Size(50, 50));  // Resize image to speed up processing
-                var colorCounts = CountColorCategories(resized);  // Get the color counts for each category
-                return GetMostFrequentCategory(colorCounts);  // Return the category with the most occurrences
+                var colorCounts = CountColorCategories(resized);
+                return GetMostFrequentCategory(colorCounts);
             }
         }
 
         private Dictionary<int, int> CountColorCategories(Bitmap bitmap) {
             var colorCounts = new Dictionary<int, int>();
-
-            // Analyze each pixel and classify it
             for (int y = 0; y < bitmap.Height; y++) {
                 for (int x = 0; x < bitmap.Width; x++) {
                     Color pixelColor = bitmap.GetPixel(x, y);
@@ -83,7 +81,6 @@ namespace ColourSortFolder {
         }
 
         private int GetMostFrequentCategory(Dictionary<int, int> colorCounts) {
-            // Find the category with the highest count
             return colorCounts.OrderByDescending(c => c.Value).FirstOrDefault().Key;
         }
 
