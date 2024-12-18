@@ -28,8 +28,14 @@ namespace ColourSortFolder {
 
             var imageFiles = Directory.GetFiles(selectedFolderPath, "*.*")
                                        .Where(f => f.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase) ||
                                                    f.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
-                                                   f.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase));
+                                                   f.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".tif", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".jfif", StringComparison.OrdinalIgnoreCase) ||
+                                                   f.EndsWith(".ico", StringComparison.OrdinalIgnoreCase));
 
             foreach (var file in imageFiles) {
                 var colorGroup = GetMostProminentColorCategory(file);
